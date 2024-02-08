@@ -17,7 +17,7 @@ const options = {
         startButton.disable = false
     },
 };
-const startButton = document.querySelector('button[data-start]');
+let startButton = document.querySelector('button[data-start]');
 const dayValue = document.querySelector('span[data-days]');
 const hourValue = document.querySelector('span[data-hours]');
 const minuteValue = document.querySelector('span[data-minutes]');
