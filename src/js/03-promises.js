@@ -6,9 +6,9 @@ form.addEventListener('submit', function (e) {
 const delayInput = document.querySelector('input[name="delay"]');
 const stepInput = document.querySelector('input[name="step"]');
 const amountInput = document.querySelector('input[name="amount"]');
-const delay = parseInt(delayInput.value);
-const step = parseInt(stepInput.value);
-const amount = parseInt(amountInput.value);
+let delay = parseInt(delayInput.value);
+let step = parseInt(stepInput.value);
+let amount = parseInt(amountInput.value);
 
 for (let i = 0; i < amount; i++){
   createPromise(i, delay)
